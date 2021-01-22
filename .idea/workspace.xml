@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5d7fd29-2aed-46bc-a796-48aa47cd4cf0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/venda/CategoriaProduto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/venda/Venda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/pessoa/CreatePessoaUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/pessoa/DeletePessoaUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/pessoa/PessoaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/pessoa/ReadPessoaUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/pessoa/UpdatePessoaUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/utils/DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/utils/EntityAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/utils/EntityNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/CreateVendaUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/DeleteVendaUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/ReadVendaUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/UpdateVendaUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/VendaDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +28,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,6 +52,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ifsp.domain.usercases.utils" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.App (1)">
     <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -97,7 +111,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611342719889</updated>
-      <workItem from="1611342722259" duration="2830000" />
+      <workItem from="1611342722259" duration="5771000" />
     </task>
     <servers />
   </component>
