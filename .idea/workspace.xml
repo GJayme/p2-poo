@@ -5,19 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5d7fd29-2aed-46bc-a796-48aa47cd4cf0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PrimaryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/SecondaryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/view/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/primary.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/secondary.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Funcionario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/venda/CategoriaProduto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/venda/Venda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -91,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611342719889</updated>
-      <workItem from="1611342722259" duration="460000" />
+      <workItem from="1611342722259" duration="2830000" />
     </task>
     <servers />
   </component>
