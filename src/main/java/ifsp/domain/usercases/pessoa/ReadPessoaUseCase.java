@@ -1,8 +1,6 @@
 package ifsp.domain.usercases.pessoa;
 
 import ifsp.domain.entities.pessoa.Pessoa;
-import ifsp.domain.entities.venda.Venda;
-import ifsp.domain.usercases.venda.VendaDAO;
 
 import java.util.List;
 import java.util.Optional;

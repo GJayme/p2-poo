@@ -1,14 +1,14 @@
 package ifsp.applicaton.controller;
 
-import java.io.IOException;
-
-import ifsp.applicaton.view.App;
+import ifsp.applicaton.view.WindowLoader;
 import javafx.fxml.FXML;
+
+import java.io.IOException;
 
 public class SecondaryController {
 
     @FXML
     private void switchToPrimary() throws IOException {
-        App.setRoot("primary");
+        WindowLoader.setRoot("primary");
     }
 }

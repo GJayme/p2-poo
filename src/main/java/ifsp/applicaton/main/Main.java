@@ -1,5 +1,6 @@
 package ifsp.applicaton.main;
 
+import ifsp.applicaton.view.WindowLoader;
 import ifsp.domain.usercases.pessoa.CreatePessoaUseCase;
 import ifsp.domain.usercases.pessoa.DeletePessoaUseCase;
 import ifsp.domain.usercases.pessoa.ReadPessoaUseCase;
@@ -23,6 +24,7 @@ public class Main {
 
     public static void main(String[] args) {
         configureInjection();
+        WindowLoader.main(args);
     }
 
     private static void configureInjection() {

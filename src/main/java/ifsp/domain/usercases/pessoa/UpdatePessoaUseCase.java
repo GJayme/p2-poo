@@ -1,7 +1,6 @@
 package ifsp.domain.usercases.pessoa;
 
 import ifsp.domain.entities.pessoa.Pessoa;
-import ifsp.domain.entities.venda.Venda;
 import ifsp.domain.usercases.utils.EntityNotFoundException;
 
 public class UpdatePessoaUseCase {

@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5d7fd29-2aed-46bc-a796-48aa47cd4cf0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/pessoa/CreatePessoaUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/pessoa/DeletePessoaUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/pessoa/PessoaDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/pessoa/ReadPessoaUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/pessoa/UpdatePessoaUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/utils/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/utils/EntityAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/utils/EntityNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/CreateVendaUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/DeleteVendaUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/ReadVendaUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/UpdateVendaUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/VendaDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PrimaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/SecondaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/SecondaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/view/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/view/WindowLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Funcionario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +52,13 @@
       <recent name="ifsp.domain.usercases.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App (1)">
-    <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ifsp.applicaton.view.App" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ifsp.App" />
       <module name="SC3005054" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ifsp.applicaton.view.*" />
+          <option name="PATTERN" value="ifsp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,12 +66,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ifsp.App" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ifsp.applicaton.main.Main" />
       <module name="SC3005054" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ifsp.*" />
+          <option name="PATTERN" value="ifsp.applicaton.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WindowLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ifsp.applicaton.view.WindowLoader" />
+      <module name="SC3005054" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ifsp.applicaton.view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,7 +105,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App (1)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.WindowLoader" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -111,7 +119,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611342719889</updated>
-      <workItem from="1611342722259" duration="5771000" />
+      <workItem from="1611342722259" duration="8388000" />
     </task>
     <servers />
   </component>

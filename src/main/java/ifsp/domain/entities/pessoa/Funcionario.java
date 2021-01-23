@@ -1,10 +1,6 @@
 package ifsp.domain.entities.pessoa;
 
-import ifsp.domain.entities.venda.Venda;
-
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Funcionario extends Pessoa{
     private Double salario;
@@ -18,8 +14,6 @@ public class Funcionario extends Pessoa{
         this.salario = salario;
         this.turno = turno;
     }
-
-    List<Venda> vendasRealizadas = new ArrayList<>();
 
     public Double getSalario() {
         return salario;
@@ -42,7 +36,7 @@ public class Funcionario extends Pessoa{
         return "Funcionario{" +
                 "salario=" + salario +
                 ", turno='" + turno + '\'' +
-                ", vendasRealizadas=" + vendasRealizadas +
+                ", vendasRealizadas=" +
                 '}';
     }
 }
