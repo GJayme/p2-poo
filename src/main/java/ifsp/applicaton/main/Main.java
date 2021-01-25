@@ -1,14 +1,11 @@
 package ifsp.applicaton.main;
 
+import ifsp.applicaton.repository.DatabaseBuilder;
+import ifsp.applicaton.repository.SqlitePessoaDAO;
+import ifsp.applicaton.repository.SqliteVendaDAO;
 import ifsp.applicaton.view.WindowLoader;
-import ifsp.domain.usercases.pessoa.CreatePessoaUseCase;
-import ifsp.domain.usercases.pessoa.DeletePessoaUseCase;
-import ifsp.domain.usercases.pessoa.ReadPessoaUseCase;
-import ifsp.domain.usercases.pessoa.UpdatePessoaUseCase;
-import ifsp.domain.usercases.venda.CreateVendaUseCase;
-import ifsp.domain.usercases.venda.DeleteVendaUseCase;
-import ifsp.domain.usercases.venda.ReadVendaUseCase;
-import ifsp.domain.usercases.venda.UpdateVendaUseCase;
+import ifsp.domain.usercases.pessoa.*;
+import ifsp.domain.usercases.venda.*;
 
 public class Main {
 
@@ -24,10 +21,26 @@ public class Main {
 
     public static void main(String[] args) {
         configureInjection();
+        setupDatabase();
         WindowLoader.main(args);
     }
 
-    private static void configureInjection() {
+    private static void setupDatabase() {
+        DatabaseBuilder dbBuilder = new DatabaseBuilder();
+        dbBuilder.buildDatabaseIfMissing();
+    }
 
+    private static void configureInjection() {
+        PessoaDAO pessoaDAO = new SqlitePessoaDAO();
+        createPessoaUseCase = new CreatePessoaUseCase(pessoaDAO);
+        deletePessoaUseCase = new DeletePessoaUseCase(pessoaDAO);
+        readPessoaUseCase = new ReadPessoaUseCase(pessoaDAO);
+        updatePessoaUseCase = new UpdatePessoaUseCase(pessoaDAO);
+
+        VendaDAO vendaDAO = new SqliteVendaDAO();
+        createVendaUseCase = new CreateVendaUseCase(vendaDAO);
+        deleteVendaUseCase = new DeleteVendaUseCase(vendaDAO);
+        readVendaUseCase = new ReadVendaUseCase(vendaDAO);
+        updateVendaUseCase = new UpdateVendaUseCase(vendaDAO);
     }
 }
