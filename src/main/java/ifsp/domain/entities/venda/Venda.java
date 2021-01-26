@@ -1,6 +1,7 @@
 package ifsp.domain.entities.venda;
 
 import ifsp.domain.entities.pessoa.Cliente;
+import ifsp.domain.entities.pessoa.Funcionario;
 
 import java.time.LocalDate;
 
@@ -12,17 +13,19 @@ public class Venda {
     private CategoriaProduto categoriaProduto;
 
     private Cliente cliente;
+    private Funcionario funcionario;
 
     public Venda() {
     }
 
-    public Venda(Integer id, LocalDate dataVenda, Double valorVenda, String nomeProduto, CategoriaProduto categoriaProduto, Cliente cliente) {
+    public Venda(Integer id, LocalDate dataVenda, Double valorVenda, String nomeProduto, CategoriaProduto categoriaProduto, Cliente cliente, Funcionario funcionario) {
         this.id = id;
         this.dataVenda = dataVenda;
         this.valorVenda = valorVenda;
         this.nomeProduto = nomeProduto;
         this.categoriaProduto = categoriaProduto;
         this.cliente = cliente;
+        this.funcionario = funcionario;
     }
 
     public Integer getId() {
@@ -69,6 +72,14 @@ public class Venda {
         return cliente;
     }
 
+    public Funcionario getFuncionario() {
+        return funcionario;
+    }
+
+    public void setFuncionario(Funcionario funcionario) {
+        this.funcionario = funcionario;
+    }
+
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
@@ -81,6 +92,8 @@ public class Venda {
                 ", valorVenda=" + valorVenda +
                 ", nomeProduto='" + nomeProduto + '\'' +
                 ", categoriaProduto=" + categoriaProduto +
+                ", cliente=" + cliente +
+                ", funcionario=" + funcionario +
                 '}';
     }
 }
