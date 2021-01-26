@@ -41,7 +41,7 @@ public class DatabaseBuilder {
         builder.append("data_nascimento DATE NOT NULL, \n");
         builder.append("salario NUMERIC, \n");
         builder.append("turno TEXT, \n");
-        builder.append("pontos_fidelidade NUMERIC, \n");
+        builder.append("pontos_fidelidade NUMERIC \n");
         builder.append("); \n");
 
         System.out.println(builder.toString());
@@ -54,10 +54,13 @@ public class DatabaseBuilder {
         builder.append("CREATE TABLE Venda (\n");
         builder.append("id INTEGER PRIMARY KEY AUTOINCREMENT, \n");
         builder.append("data_venda DATE NOT NULL, \n");
+        builder.append("funcionario_responsavel TEXT NOT NULL, \n");
+        builder.append("cliente TEXT NOT NULL, \n");
         builder.append("valor_venda NUMERIC NOT NULL, \n");
         builder.append("nome_produto TEXT NOT NULL, \n");
         builder.append("categoria TEXT NOT NULL, \n");
-        builder.append("FOREIGN KEY(essoa) REFERENCES Pessoa(id), \n");
+        builder.append("FOREIGN KEY(funcionario_responsavel) REFERENCES Pessoa(id), \n");
+        builder.append("FOREIGN KEY(cliente) REFERENCES Pessoa(id) \n");
         builder.append("); \n");
 
         System.out.println(builder.toString());
