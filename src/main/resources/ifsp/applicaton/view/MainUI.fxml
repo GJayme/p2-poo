@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifsp.applicaton.controller.MainUIController">
+   <children>
+      <Button fx:id="btnGerenciarPessoas" layoutX="15.0" layoutY="360.0" mnemonicParsing="false" onAction="#gerenciarPessoas" text="Genciar Pessoas" />
+      <Button fx:id="btnRealizarVenda" layoutX="558.0" layoutY="360.0" mnemonicParsing="false" onAction="#realizarVenda" text="Realizar venda" />
+      <TableView fx:id="tableView" layoutX="15.0" layoutY="119.0" prefHeight="229.0" prefWidth="658.0">
+        <columns>
+          <TableColumn fx:id="cData" prefWidth="102.0" text="Data" />
+          <TableColumn fx:id="cValor" prefWidth="102.0" text="Valor" />
+            <TableColumn fx:id="cProduto" prefWidth="100.0" text="Produto" />
+            <TableColumn fx:id="cCategoria" prefWidth="104.0" text="Categoria" />
+            <TableColumn fx:id="cCliente" prefWidth="118.0" text="Cliente" />
+            <TableColumn fx:id="cFuncionario" prefWidth="131.0" text="Funcionário" />
+        </columns>
+      </TableView>
+      <Label fx:id="lblCpfCliente" layoutX="15.0" layoutY="89.0" text="CPF do Cliente:" />
+      <TextField fx:id="txtCpfCliente" layoutX="132.0" layoutY="84.0" />
+      <Button fx:id="btnBuscarCpf" layoutX="335.0" layoutY="84.0" mnemonicParsing="false" onAction="#buscarCpfCliente" text="Buscar" />
+      <Label layoutX="285.0" layoutY="14.0" text="Pastelaria">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

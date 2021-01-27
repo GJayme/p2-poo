@@ -2,7 +2,6 @@ package ifsp.applicaton.repository;
 
 import ifsp.domain.entities.pessoa.Cliente;
 import ifsp.domain.entities.pessoa.Funcionario;
-import ifsp.domain.entities.pessoa.Pessoa;
 import ifsp.domain.entities.venda.CategoriaProduto;
 import ifsp.domain.entities.venda.Venda;
 import ifsp.domain.usercases.venda.VendaDAO;
@@ -14,8 +13,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.Vector;
-import java.util.function.Function;
 
 import static ifsp.applicaton.main.Main.readPessoaUseCase;
 

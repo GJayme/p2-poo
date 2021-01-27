@@ -15,6 +15,11 @@ public class Funcionario extends Pessoa{
         this.turno = turno;
     }
 
+    @Override
+    String getType() {
+        return "Funcionário";
+    }
+
     public Double getSalario() {
         return salario;
     }

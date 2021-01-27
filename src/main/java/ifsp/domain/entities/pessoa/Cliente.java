@@ -20,4 +20,9 @@ public class Cliente extends Pessoa{
     public void setPontosFidelidade(Double pontosFidelidade) {
         this.pontosFidelidade = pontosFidelidade;
     }
+
+    @Override
+    String getType() {
+        return "Cliente";
+    }
 }

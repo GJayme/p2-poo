@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5d7fd29-2aed-46bc-a796-48aa47cd4cf0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/MainUIController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoasManagementUIController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/MainUI.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoasManagementUI.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqlitePessoaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqlitePessoaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PrimaryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/SecondaryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqliteVendaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqliteVendaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/view/WindowLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/view/WindowLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/primary.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/secondary.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +31,7 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -87,6 +101,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -106,7 +133,7 @@
       <workItem from="1611342722259" duration="9134000" />
       <workItem from="1611582633750" duration="594000" />
       <workItem from="1611605144234" duration="5551000" />
-      <workItem from="1611697107266" duration="5081000" />
+      <workItem from="1611697107266" duration="14379000" />
     </task>
     <servers />
   </component>

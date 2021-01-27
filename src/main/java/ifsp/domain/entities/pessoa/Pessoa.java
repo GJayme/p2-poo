@@ -18,6 +18,8 @@ public abstract class Pessoa {
         this.dataNascimento = dataNascimento;
     }
 
+    abstract String getType();
+
     public String getNome() {
         return nome;
     }
