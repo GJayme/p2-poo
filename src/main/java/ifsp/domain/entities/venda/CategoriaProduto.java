@@ -1,5 +1,7 @@
 package ifsp.domain.entities.venda;
 
+import java.util.Arrays;
+
 public enum CategoriaProduto {
     BEBIDA("Bebida"),
     PASTEL("Pastel"),
@@ -14,5 +16,12 @@ public enum CategoriaProduto {
     @Override
     public String toString() {
         return label;
+    }
+
+    public static CategoriaProduto toEnum(String value) {
+        return Arrays.stream(CategoriaProduto.values())
+                .filter(a -> value.equals(a.toString()))
+                .findAny()
+                .orElseThrow(IllegalArgumentException::new);
     }
 }
