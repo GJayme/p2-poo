@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="325.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifsp.applicaton.controller.PessoaUIController">
+   <children>
+      <TextField fx:id="txtNome" layoutX="111.0" layoutY="41.0" prefHeight="26.0" prefWidth="267.0" />
+      <TextField fx:id="txtCpf" layoutX="111.0" layoutY="90.0" prefHeight="26.0" prefWidth="267.0" />
+      <TextField fx:id="txtDataNascimento" layoutX="444.0" layoutY="138.0" prefHeight="26.0" prefWidth="150.0" />
+      <TextField fx:id="txtSalario" layoutX="111.0" layoutY="138.0" />
+      <TextField fx:id="txtTurno" layoutX="111.0" layoutY="185.0" />
+      <Label fx:id="lblNome" layoutX="50.0" layoutY="46.0" text="Nome:" />
+      <Label fx:id="lblCpf" layoutX="63.0" layoutY="95.0" text="CPF:" />
+      <Label fx:id="lblSexo" layoutX="389.0" layoutY="95.0" text="Sexo:" />
+      <ChoiceBox fx:id="cbSexo" layoutX="444.0" layoutY="90.0" prefWidth="150.0" />
+      <Label fx:id="lblDataNascimento" layoutX="288.0" layoutY="143.0" text="Data de Nascimento:" />
+      <Label fx:id="lblSalario" layoutX="43.0" layoutY="143.0" text="Salário:" />
+      <Label fx:id="lblTipo" layoutX="391.0" layoutY="46.0" text="Tipo:" />
+      <ChoiceBox fx:id="cbTipo" layoutX="444.0" layoutY="41.0" prefWidth="150.0" onAction="#choiceTipo"/>
+      <Label fx:id="lblPontosFidelidade" layoutX="306.0" layoutY="190.0" text="Pontos Fidelidade:" />
+      <Label fx:id="lblTurno" layoutX="48.0" layoutY="190.0" text="Turno:" />
+      <Label fx:id="lblTotalPontosFidelidade" layoutX="543.0" layoutY="181.0" />
+      <Button fx:id="btnSalvar" layoutX="501.0" layoutY="285.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
+      <Button fx:id="btnVoltar" layoutX="580.0" layoutY="285.0" mnemonicParsing="false" onAction="#voltar" text="Voltar" />
+   </children>
+</AnchorPane>

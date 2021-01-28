@@ -5,10 +5,7 @@ import ifsp.domain.entities.pessoa.Funcionario;
 import ifsp.domain.entities.pessoa.Pessoa;
 import ifsp.domain.usercases.pessoa.PessoaDAO;
 
-import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -24,15 +21,20 @@ public class SqlitePessoaDAO implements PessoaDAO {
             stmt.setString(1, pessoa.getNome());
             stmt.setString(2, pessoa.getCpf());
             stmt.setString(3, pessoa.getSexo());
-            stmt.setDate(4, Date.valueOf(pessoa.getDataNascimento()));
+            stmt.setString(4, pessoa.getDataNascimento().toString());
 
             if (pessoa instanceof Funcionario) {
                 stmt.setDouble(5, ((Funcionario) pessoa).getSalario());
                 stmt.setString(6, ((Funcionario) pessoa).getTurno());
+            } else {
+                stmt.setNull(5, Types.VARCHAR);
+                stmt.setNull(6, Types.VARCHAR);
             }
 
             if (pessoa instanceof Cliente) {
                 stmt.setDouble(7, ((Cliente) pessoa).getPontosFidelidade());
+            } else {
+                stmt.setNull(7, Types.VARCHAR);
             }
 
             stmt.execute();
@@ -65,7 +67,7 @@ public class SqlitePessoaDAO implements PessoaDAO {
         String nome = rs.getString("nome");
         String sexo = rs.getString("sexo");
         String cpf = rs.getString("cpf");
-        LocalDate dataNascimento = rs.getDate("data_nascimento").toLocalDate();
+        LocalDate dataNascimento = LocalDate.parse(rs.getString("data_nascimento"));
         Double salario = rs.getDouble("salario");
         String turno = rs.getString("turno");
         Double pontosFidelidade = rs.getDouble("pontos_fidelidade");
@@ -91,7 +93,7 @@ public class SqlitePessoaDAO implements PessoaDAO {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return null;
+        return pessoas;
     }
 
     @Override
@@ -102,13 +104,20 @@ public class SqlitePessoaDAO implements PessoaDAO {
         try(PreparedStatement stmt = ConnectionFactory.createPreparedStatement(sql)) {
             stmt.setString(1, pessoa.getNome());
             stmt.setString(2, pessoa.getSexo());
-            stmt.setDate(3, Date.valueOf(pessoa.getDataNascimento()));
+            stmt.setString(3, String.valueOf(pessoa.getDataNascimento()));
 
             if (pessoa instanceof Cliente) {
                 stmt.setDouble(4, ((Cliente) pessoa).getPontosFidelidade());
             } else {
+                stmt.setNull(4, Types.VARCHAR);
+            }
+
+            if (pessoa instanceof Funcionario) {
                 stmt.setDouble(5, ((Funcionario) pessoa).getSalario());
                 stmt.setString(6, ((Funcionario) pessoa).getTurno());
+            } else {
+                stmt.setNull(5, Types.VARCHAR);
+                stmt.setNull(6, Types.VARCHAR);
             }
 
             stmt.setString(7, pessoa.getCpf());

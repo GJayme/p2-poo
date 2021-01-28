@@ -16,7 +16,7 @@ public class Funcionario extends Pessoa{
     }
 
     @Override
-    String getType() {
+    public String getType() {
         return "Funcionário";
     }
 

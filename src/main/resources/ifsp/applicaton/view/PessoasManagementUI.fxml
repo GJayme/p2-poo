@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="ifsp.applicaton.controller.PessoasManagementUIController"
-            prefHeight="400.0" prefWidth="600.0">
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
+<AnchorPane prefHeight="400.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifsp.applicaton.controller.PessoasManagementUIController">
+   <children>
+      <TableView fx:id="tableView" layoutX="16.0" layoutY="16.0" prefHeight="277.0" prefWidth="669.0">
+        <columns>
+          <TableColumn fx:id="cNome" prefWidth="171.0" text="Nome" />
+          <TableColumn fx:id="cCpf" prefWidth="185.0" text="CPF" />
+            <TableColumn fx:id="cSexo" prefWidth="66.0" text="Sexo" />
+            <TableColumn fx:id="cNascimento" prefWidth="141.0" text="Nascimento" />
+            <TableColumn fx:id="cTipo" prefWidth="105.0" text="Tipo" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNovo" layoutX="25.0" layoutY="352.0" mnemonicParsing="false" onAction="#novaPessoa" text="Novo" />
+      <Button fx:id="btnVisualizar" layoutX="114.0" layoutY="352.0" mnemonicParsing="false" onAction="#visualizarPessoa" text="Visualizar" />
+      <Button fx:id="btnEditar" layoutX="225.0" layoutY="352.0" mnemonicParsing="false" onAction="#editarPessoa" text="Editar" />
+      <Button fx:id="btnRemover" layoutX="312.0" layoutY="352.0" mnemonicParsing="false" onAction="#removerPessoa" text="Remover" />
+      <Button fx:id="btnVoltarParaMain" layoutX="628.0" layoutY="352.0" mnemonicParsing="false" onAction="#voltarParaMain" text="Voltar" />
+   </children>
 </AnchorPane>

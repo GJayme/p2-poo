@@ -22,7 +22,7 @@ public class Cliente extends Pessoa{
     }
 
     @Override
-    String getType() {
+    public String getType() {
         return "Cliente";
     }
 }

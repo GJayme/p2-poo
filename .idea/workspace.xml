@@ -5,21 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5d7fd29-2aed-46bc-a796-48aa47cd4cf0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/MainUIController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoasManagementUIController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/MainUI.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoasManagementUI.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoaUIController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/UIMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoaUI.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PrimaryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/SecondaryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqliteVendaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqliteVendaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoasManagementUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoasManagementUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqlitePessoaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqlitePessoaDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/view/WindowLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/view/WindowLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Funcionario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/primary.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/secondary.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoasManagementUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoasManagementUI.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +27,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
-        <option value="FxmlFile" />
+        <option value="Enum" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -53,11 +51,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../symploteca" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="ifsp.applicaton.controller" />
       <recent name="ifsp.domain.usercases.utils" />
     </key>
   </component>
@@ -133,7 +132,9 @@
       <workItem from="1611342722259" duration="9134000" />
       <workItem from="1611582633750" duration="594000" />
       <workItem from="1611605144234" duration="5551000" />
-      <workItem from="1611697107266" duration="14379000" />
+      <workItem from="1611697107266" duration="14722000" />
+      <workItem from="1611786710038" duration="7177000" />
+      <workItem from="1611795353234" duration="6682000" />
     </task>
     <servers />
   </component>
@@ -154,5 +155,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="pessoa" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
