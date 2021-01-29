@@ -6,5 +6,6 @@ import ifsp.domain.usercases.utils.DAO;
 import java.util.List;
 
 public interface VendaDAO extends DAO<Venda, Integer> {
-    List<Venda> readByCpf(String cpf);
+    List<Venda> readClienteByCpf(String cpf);
+    List<Venda> readFuncionarioByCpf(String cpf);
 }

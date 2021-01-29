@@ -20,11 +20,18 @@ public class ReadVendaUseCase {
         return vendaDAO.readOne(id);
     }
 
-    public List<Venda> readByCpf(String cpf) {
+    public List<Venda> readByClienteCpf(String cpf) {
         if (cpf == null) {
             throw new IllegalArgumentException("CPF não pode ser nulo.");
         }
-        return vendaDAO.readByCpf(cpf);
+        return vendaDAO.readClienteByCpf(cpf);
+    }
+
+    public List<Venda> readFuncionarioByCpf(String cpf) {
+        if (cpf == null) {
+            throw new IllegalArgumentException("CPF não pode ser nulo.");
+        }
+        return vendaDAO.readFuncionarioByCpf(cpf);
     }
 
     public List<Venda> readAll(){

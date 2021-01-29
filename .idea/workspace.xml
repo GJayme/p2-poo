@@ -6,17 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a5d7fd29-2aed-46bc-a796-48aa47cd4cf0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/MainUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/MainUIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoaUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoaUIController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoasManagementUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoasManagementUIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/VendaUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/VendaUIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqlitePessoaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqlitePessoaDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqliteVendaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqliteVendaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/DeleteVendaUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/DeleteVendaUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/UpdateVendaUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/UpdateVendaUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/MainUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/MainUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/ReadVendaUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/ReadVendaUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/VendaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/VendaDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoaUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoaUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoasManagementUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoasManagementUI.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/VendaUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/VendaUI.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +47,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../symploteca" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -137,7 +134,10 @@
       <workItem from="1611786710038" duration="7177000" />
       <workItem from="1611795353234" duration="6921000" />
       <workItem from="1611863597523" duration="23134000" />
-      <workItem from="1611934120931" duration="3988000" />
+      <workItem from="1611934120931" duration="4417000" />
+      <workItem from="1611945984136" duration="472000" />
+      <workItem from="1611946517678" duration="144000" />
+      <workItem from="1611946731085" duration="4483000" />
     </task>
     <servers />
   </component>

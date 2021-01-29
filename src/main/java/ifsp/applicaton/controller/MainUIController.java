@@ -73,7 +73,7 @@ public class MainUIController {
     }
 
     public void searchVendaByCpfCliente(ActionEvent actionEvent) {
-        List<Venda> vendas = readVendaUseCase.readByCpf(txtCpfCliente.getText());
+        List<Venda> vendas = readVendaUseCase.readByClienteCpf(txtCpfCliente.getText());
         tableData.clear();
         tableData.addAll(vendas);
     }

@@ -137,13 +137,25 @@ public class SqliteVendaDAO implements VendaDAO {
     }
 
     @Override
-    public List<Venda> readByCpf(String cpf) {
+    public List<Venda> readClienteByCpf(String cpf) {
         String sql = "SELECT Venda.* FROM Venda JOIN Pessoa On Venda.cliente = Pessoa.cpf " +
                 "WHERE pessoa.cpf = ?";
 
+        return getVendas(cpf, sql);
+    }
+
+    @Override
+    public List<Venda> readFuncionarioByCpf(String cpf) {
+        String sql = "SELECT Venda.* FROM Venda JOIN Pessoa On Venda.funcionario_responsavel = " +
+                "Pessoa.cpf WHERE pessoa.cpf = ?";
+
+        return getVendas(cpf, sql);
+    }
+
+    private List<Venda> getVendas(String cpf, String sql) {
         List<Venda> vendas = new ArrayList<>();
 
-        try(PreparedStatement stmt = ConnectionFactory.createPreparedStatement(sql)) {
+        try (PreparedStatement stmt = ConnectionFactory.createPreparedStatement(sql)) {
             stmt.setString(1, cpf);
             ResultSet rs = stmt.executeQuery();
             while (rs.next()) {
