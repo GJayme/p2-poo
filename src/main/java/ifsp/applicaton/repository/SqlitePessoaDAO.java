@@ -5,7 +5,6 @@ import ifsp.domain.entities.pessoa.Funcionario;
 import ifsp.domain.entities.pessoa.Pessoa;
 import ifsp.domain.entities.pessoa.PessoaTipo;
 import ifsp.domain.usercases.pessoa.PessoaDAO;
-
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;

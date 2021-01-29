@@ -19,8 +19,8 @@ public class UpdateVendaUseCase {
             throw new EntityNotFoundException("Venda não encontrada.");
         }
 
-        Double pontos = PontosFidelidade.getPontos(venda.getValorVenda());
-        venda.getCliente().addPontosFidelidade(pontos);
+        Double pontosFidelidade = PontosFidelidade.getPontos(venda.getValorVenda());
+        venda.getCliente().addPontosFidelidade(pontosFidelidade);
         updatePessoaUseCase.update(venda.getCliente());
 
         return vendaDAO.update(venda);

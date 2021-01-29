@@ -16,7 +16,7 @@
       <Label fx:id="lblCpfCliente" layoutX="55.0" layoutY="132.0" text="CPF Cliente:" />
       <TextField fx:id="txtCpfCliente" layoutX="156.0" layoutY="127.0" />
       <TextField fx:id="txtCpfVendedor" layoutX="156.0" layoutY="170.0" />
-      <Button fx:id="btnVoltar" layoutX="511.0" layoutY="360.0" mnemonicParsing="false" onAction="#voltarParaMain" text="Voltar" />
+      <Button fx:id="btnVoltar" layoutX="511.0" layoutY="360.0" mnemonicParsing="false" onAction="#backToDashboard" text="Voltar" />
       <Button fx:id="btnSalvar" layoutX="428.0" layoutY="360.0" mnemonicParsing="false" onAction="#saveAndUpdate" text="Salvar" />
    </children>
 </AnchorPane>

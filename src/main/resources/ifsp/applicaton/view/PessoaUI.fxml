@@ -16,11 +16,11 @@
       <Label fx:id="lblDataNascimento" layoutX="288.0" layoutY="143.0" text="Data de Nascimento:" />
       <Label fx:id="lblSalario" layoutX="43.0" layoutY="143.0" text="Salário:" />
       <Label fx:id="lblTipo" layoutX="391.0" layoutY="46.0" text="Tipo:" />
-      <ComboBox fx:id="comboBoxTipo" layoutX="444.0" layoutY="41.0" onAction="#choiceTipo" prefWidth="150.0" />
+      <ComboBox fx:id="comboBoxTipo" layoutX="444.0" layoutY="41.0" onAction="#selectedPessoaTipoAndHiddenField" prefWidth="150.0" />
       <Label fx:id="lblPontosFidelidade" layoutX="306.0" layoutY="190.0" text="Pontos Fidelidade:" />
       <Label fx:id="lblTurno" layoutX="48.0" layoutY="190.0" text="Turno:" />
       <Label fx:id="lblTotalPontosFidelidade" layoutX="499.0" layoutY="190.0" />
       <Button fx:id="btnSalvar" layoutX="444.0" layoutY="285.0" mnemonicParsing="false" onAction="#saveAndUpdate" text="Salvar" />
-      <Button fx:id="btnVoltar" layoutX="537.0" layoutY="285.0" mnemonicParsing="false" onAction="#voltar" text="Voltar" />
+      <Button fx:id="btnVoltar" layoutX="537.0" layoutY="285.0" mnemonicParsing="false" onAction="#backToDashboard" text="Voltar" />
    </children>
 </AnchorPane>

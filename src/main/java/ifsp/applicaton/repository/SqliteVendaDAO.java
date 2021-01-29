@@ -5,7 +5,6 @@ import ifsp.domain.entities.pessoa.Funcionario;
 import ifsp.domain.entities.venda.CategoriaProduto;
 import ifsp.domain.entities.venda.Venda;
 import ifsp.domain.usercases.venda.VendaDAO;
-
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

@@ -9,7 +9,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-
 import java.io.IOException;
 import java.util.List;
 
@@ -59,7 +58,7 @@ public class PessoasManagementUIController {
         tableData.addAll(pessoas);
     }
 
-    public void removerPessoa(ActionEvent actionEvent) {
+    public void deletePessoa(ActionEvent actionEvent) {
         Pessoa selectedPessoa = tableView.getSelectionModel().getSelectedItem();
         if (selectedPessoa != null ) {
             deletePessoaUseCase.delete(selectedPessoa);
@@ -67,19 +66,19 @@ public class PessoasManagementUIController {
         }
     }
 
-    public void voltarParaMain(ActionEvent actionEvent) throws IOException {
+    public void backToDashboard(ActionEvent actionEvent) throws IOException {
         WindowLoader.setRoot("MainUI");
     }
 
-    public void novaPessoa(ActionEvent actionEvent) throws IOException {
+    public void createNewPessoa(ActionEvent actionEvent) throws IOException {
         WindowLoader.setRoot("PessoaUI");
     }
 
-    public void visualizarPessoa(ActionEvent actionEvent) throws IOException {
+    public void viewDetailPessoa(ActionEvent actionEvent) throws IOException {
         showPessoaInMode(UIMode.VISUALIZAR);
     }
 
-    public void editarPessoa(ActionEvent actionEvent) throws IOException {
+    public void editPessoa(ActionEvent actionEvent) throws IOException {
         showPessoaInMode(UIMode.EDITAR);
     }
 

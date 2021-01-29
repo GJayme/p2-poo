@@ -34,8 +34,8 @@ public class DeleteVendaUseCase {
             throw new EntityNotFoundException("Venda não encontrada.");
         }
 
-        Double pontos = PontosFidelidade.getPontos(venda.getValorVenda());
-        venda.getCliente().removePontosFidelidade(pontos);
+        Double pontosFidelidade = PontosFidelidade.getPontos(venda.getValorVenda());
+        venda.getCliente().removePontosFidelidade(pontosFidelidade);
         updatePessoaUseCase.update(venda.getCliente());
 
         return vendaDAO.delete(venda);

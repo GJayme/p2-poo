@@ -10,7 +10,6 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-
 import java.io.IOException;
 import java.time.LocalDate;
 
@@ -153,11 +152,11 @@ public class PessoaUIController {
         }
     }
 
-    public void voltar(ActionEvent actionEvent) throws IOException {
+    public void backToDashboard(ActionEvent actionEvent) throws IOException {
         WindowLoader.setRoot("PessoasManagementUI");
     }
 
-    public void choiceTipo(ActionEvent actionEvent) {
+    public void selectedPessoaTipoAndHiddenField(ActionEvent actionEvent) {
         PessoaTipo pessoaTipo = comboBoxTipo.getSelectionModel().getSelectedItem();
         if (pessoaTipo.equals(PessoaTipo.CLIENTE)) {
             lblTotalPontosFidelidade.setVisible(true);

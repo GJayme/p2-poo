@@ -6,14 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="a5d7fd29-2aed-46bc-a796-48aa47cd4cf0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/MainUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/MainUIController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoaUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoaUIController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoasManagementUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoasManagementUIController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/VendaUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/VendaUIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/DatabaseBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/DatabaseBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqlitePessoaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqlitePessoaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqliteVendaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqliteVendaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/DeleteVendaUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/DeleteVendaUseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/UpdateVendaUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/UpdateVendaUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/MainUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/MainUI.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoaUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoaUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoasManagementUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoasManagementUI.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/VendaUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/VendaUI.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +137,7 @@
       <workItem from="1611786710038" duration="7177000" />
       <workItem from="1611795353234" duration="6921000" />
       <workItem from="1611863597523" duration="23134000" />
-      <workItem from="1611934120931" duration="2893000" />
+      <workItem from="1611934120931" duration="3988000" />
     </task>
     <servers />
   </component>
@@ -155,26 +158,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/DeleteVendaUseCase.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/VendaUIController.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/VendaUIController.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

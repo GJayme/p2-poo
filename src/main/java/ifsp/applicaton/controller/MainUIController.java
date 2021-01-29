@@ -10,7 +10,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-
 import java.io.IOException;
 import java.util.List;
 
@@ -65,30 +64,29 @@ public class MainUIController {
         tableData.addAll(vendas);
     }
 
-    public void gerenciarPessoas(ActionEvent actionEvent) throws IOException {
+    public void managementPessoa(ActionEvent actionEvent) throws IOException {
         WindowLoader.setRoot("PessoasManagementUI");
     }
 
-    public void realizarVenda(ActionEvent actionEvent) throws IOException {
+    public void createNewVenda(ActionEvent actionEvent) throws IOException {
         WindowLoader.setRoot("VendaUI");
     }
 
-    public void buscarCpfCliente(ActionEvent actionEvent) {
+    public void searchVendaByCpfCliente(ActionEvent actionEvent) {
         List<Venda> vendas = readVendaUseCase.readByCpf(txtCpfCliente.getText());
         tableData.clear();
         tableData.addAll(vendas);
     }
 
-    public void visualizarVenda(ActionEvent actionEvent) throws IOException {
+    public void viewVendaDetail(ActionEvent actionEvent) throws IOException {
         showVendaInMode(UIMode.VISUALIZAR);
     }
 
-    //TODO bug ao editar venda, gera nova venda ao inves de sobreescrever
-    public void editarVenda(ActionEvent actionEvent) throws IOException {
+    public void editVenda(ActionEvent actionEvent) throws IOException {
         showVendaInMode(UIMode.EDITAR);
     }
 
-    public void deletarVenda(ActionEvent actionEvent) {
+    public void deleteVenda(ActionEvent actionEvent) {
         Venda selectedVenda = tableView.getSelectionModel().getSelectedItem();
         if (selectedVenda != null) {
             deleteVendaUseCase.delete(selectedVenda.getId());

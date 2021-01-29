@@ -12,7 +12,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
-
 import java.io.IOException;
 import java.util.Optional;
 
@@ -42,7 +41,7 @@ public class VendaUIController {
         comboBoxCategoria.getItems().setAll(CategoriaProduto.values());
     }
 
-    public void voltarParaMain(ActionEvent actionEvent) throws IOException {
+    public void backToDashboard(ActionEvent actionEvent) throws IOException {
         WindowLoader.setRoot("MainUI");
     }
 
