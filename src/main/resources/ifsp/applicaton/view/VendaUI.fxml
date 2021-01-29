@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="400.0" prefWidth="608.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifsp.applicaton.controller.VendaUIController">
+   <children>
+      <Label fx:id="lblData" layoutX="373.0" layoutY="132.0" text="Data:" />
+      <DatePicker fx:id="dtData" layoutX="418.0" layoutY="127.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label fx:id="lblValor" layoutX="94.0" layoutY="86.0" text="Valor:" />
+      <Label fx:id="lblNomeProduto" layoutX="34.0" layoutY="41.0" text="Nome produto:" />
+      <ComboBox fx:id="comboBoxCategoria" layoutX="418.0" layoutY="81.0" prefWidth="150.0" />
+      <Label fx:id="lblCategoria" layoutX="339.0" layoutY="86.0" text="Categoria:" />
+      <TextField fx:id="txtValorProduto" layoutX="156.0" layoutY="81.0" />
+      <TextField fx:id="txtNomeProduto" layoutX="156.0" layoutY="36.0" prefHeight="26.0" prefWidth="411.0" />
+      <Label fx:id="lblCpfVendendor" layoutX="31.0" layoutY="175.0" text="CPF Vendendor:" />
+      <Label fx:id="lblCpfCliente" layoutX="55.0" layoutY="132.0" text="CPF Cliente:" />
+      <TextField fx:id="txtCpfCliente" layoutX="156.0" layoutY="127.0" />
+      <TextField fx:id="txtCpfVendedor" layoutX="156.0" layoutY="170.0" />
+      <Button fx:id="btnVoltar" layoutX="511.0" layoutY="360.0" mnemonicParsing="false" onAction="#voltarParaMain" text="Voltar" />
+      <Button fx:id="btnSalvar" layoutX="428.0" layoutY="360.0" mnemonicParsing="false" onAction="#salvarVenda" text="Salvar" />
+   </children>
+</AnchorPane>

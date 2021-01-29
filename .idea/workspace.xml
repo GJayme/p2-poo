@@ -5,18 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5d7fd29-2aed-46bc-a796-48aa47cd4cf0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoaUIController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/UIMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoaUI.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/VendaUIController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/PessoaTipo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/PontosFidelidade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/VendaUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SC3005054.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SC3005054_P2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/MainUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/MainUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoaUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoaUIController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoasManagementUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoasManagementUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/DatabaseBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/DatabaseBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqlitePessoaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqlitePessoaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/view/WindowLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/view/WindowLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqliteVendaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqliteVendaDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Funcionario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/venda/Venda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/venda/Venda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/CreateVendaUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/CreateVendaUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/DeleteVendaUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/DeleteVendaUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/ReadVendaUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/ReadVendaUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/VendaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/VendaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/MainUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/MainUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoaUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoaUI.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoasManagementUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoasManagementUI.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,9 +41,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Enum" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -56,6 +69,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="ifsp.domain.entities.pessoa" />
       <recent name="ifsp.applicaton.controller" />
       <recent name="ifsp.domain.usercases.utils" />
     </key>
@@ -63,7 +77,7 @@
   <component name="RunManager" selected="Application.Main">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ifsp.App" />
-      <module name="SC3005054" />
+      <module name="SC3005054_P2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ifsp.*" />
@@ -76,7 +90,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ifsp.applicaton.main.Main" />
-      <module name="SC3005054" />
+      <module name="SC3005054_P2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ifsp.applicaton.main.*" />
@@ -89,7 +103,7 @@
     </configuration>
     <configuration name="WindowLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ifsp.applicaton.view.WindowLoader" />
-      <module name="SC3005054" />
+      <module name="SC3005054_P2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ifsp.applicaton.view.*" />
@@ -100,15 +114,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="SC3005054_P2" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="SC3005054_P2" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,7 +193,8 @@
       <workItem from="1611605144234" duration="5551000" />
       <workItem from="1611697107266" duration="14722000" />
       <workItem from="1611786710038" duration="7177000" />
-      <workItem from="1611795353234" duration="6682000" />
+      <workItem from="1611795353234" duration="6921000" />
+      <workItem from="1611863597523" duration="22796000" />
     </task>
     <servers />
   </component>
@@ -157,9 +217,23 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/DeleteVendaUseCase.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="pessoa" language="JAVA" />
+        <watch expression="getPessoa(txtCpfCliente.getText())" language="JAVA" />
+        <watch expression="getPessoa(txtCpfVendedor.getText())" language="JAVA" />
+        <watch expression="vendaDAO" language="JAVA" />
+        <watch expression="vendaDAO.readOne(id)" language="JAVA" />
+        <watch expression="vendaSelected.getCliente()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

@@ -6,7 +6,6 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -31,14 +30,6 @@ public class PessoasManagementUIController {
     private TableColumn<Pessoa, String> cNascimento;
     @FXML
     private TableColumn<Pessoa, String> cTipo;
-    @FXML
-    private Button btnNovo;
-    @FXML
-    private Button btnVisualizar;
-    @FXML
-    private Button btnEditar;
-    @FXML
-    private Button btnRemover;
 
     private ObservableList<Pessoa> tableData;
 
@@ -59,7 +50,7 @@ public class PessoasManagementUIController {
         cCpf.setCellValueFactory(new PropertyValueFactory<>("cpf"));
         cSexo.setCellValueFactory(new PropertyValueFactory<>("sexo"));
         cNascimento.setCellValueFactory(new PropertyValueFactory<>("dataNascimento"));
-//        cTipo.setCellValueFactory(new PropertyValueFactory<>("data_nascimento"));
+        cTipo.setCellValueFactory(new PropertyValueFactory<>("tipo"));
     }
 
     private void loadDataAndShow() {
@@ -80,6 +71,7 @@ public class PessoasManagementUIController {
         WindowLoader.setRoot("MainUI");
     }
 
+    //TODO bug ao criar pessoa com msm CPF, deveria acusar erro, mas sobreescreve
     public void novaPessoa(ActionEvent actionEvent) throws IOException {
         WindowLoader.setRoot("PessoaUI");
     }
@@ -88,6 +80,7 @@ public class PessoasManagementUIController {
         showPessoaInMode(UIMode.VISUALIZAR);
     }
 
+    //TODO bug ao editar pessoa, gera nova pessoa
     public void editarPessoa(ActionEvent actionEvent) throws IOException {
         showPessoaInMode(UIMode.EDITAR);
     }

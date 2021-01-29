@@ -7,18 +7,26 @@ public abstract class Pessoa {
     private String sexo;
     private String cpf;
     private LocalDate dataNascimento;
+    private PessoaTipo tipo;
 
     public Pessoa() {
     }
 
-    public Pessoa(String nome, String sexo, String cpf, LocalDate dataNascimento) {
+    public Pessoa(String nome, String sexo, String cpf, LocalDate dataNascimento, PessoaTipo tipo) {
         this.nome = nome;
         this.sexo = sexo;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
+        this.tipo = tipo;
     }
 
-    public abstract String getType();
+    public PessoaTipo getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(PessoaTipo tipo) {
+        this.tipo = tipo;
+    }
 
     public String getNome() {
         return nome;

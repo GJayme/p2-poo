@@ -4,14 +4,12 @@ import ifsp.applicaton.view.WindowLoader;
 import ifsp.domain.entities.pessoa.Cliente;
 import ifsp.domain.entities.pessoa.Funcionario;
 import ifsp.domain.entities.pessoa.Pessoa;
+import ifsp.domain.entities.pessoa.PessoaTipo;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 import java.io.IOException;
 import java.time.LocalDate;
@@ -33,19 +31,9 @@ public class PessoaUIController {
     @FXML
     private ChoiceBox<String> cbSexo;
     @FXML
-    private ChoiceBox<String> cbTipo;
-    @FXML
-    private Label lblNome;
-    @FXML
-    private Label lblCpf;
-    @FXML
-    private Label lblSexo;
-    @FXML
-    private Label lblDataNascimento;
+    private ComboBox<PessoaTipo> comboBoxTipo;
     @FXML
     private Label lblSalario;
-    @FXML
-    private Label lblTipo;
     @FXML
     private Label lblPontosFidelidade;
     @FXML
@@ -54,12 +42,9 @@ public class PessoaUIController {
     private Label lblTotalPontosFidelidade;
     @FXML
     private Button btnSalvar;
-    @FXML
-    private Button btnVoltar;
 
     private Pessoa pessoa;
     private ObservableList<String > sexo;
-    private ObservableList<String> pessoaTipos;
 
     @FXML
     private void initialize() {
@@ -69,15 +54,12 @@ public class PessoaUIController {
 
     private void bindChoiceBoxToItems() {
         sexo = FXCollections.observableArrayList();
-        pessoaTipos = FXCollections.observableArrayList();
-
         cbSexo.setItems(sexo);
-        cbTipo.setItems(pessoaTipos);
+        comboBoxTipo.getItems().setAll(PessoaTipo.values());
     }
 
     private void loadChoices() {
         sexo.addAll("Masculino", "Feminino");
-        pessoaTipos.addAll("Cliente", "Funcionário");
     }
 
     public void setPessoa(Pessoa pessoa, UIMode mode) {
@@ -91,6 +73,13 @@ public class PessoaUIController {
         if (mode == UIMode.VISUALIZAR) {
             configureViewMode();
         }
+
+        if (mode == UIMode.EDITAR) {
+            txtCpf.setDisable(true);
+            cbSexo.setDisable(true);
+            comboBoxTipo.setDisable(true);
+            btnSalvar.setText("Atualizar");
+        }
     }
 
     private void configureViewMode() {
@@ -98,21 +87,23 @@ public class PessoaUIController {
         txtCpf.setDisable(true);
         txtDataNascimento.setDisable(true);
         cbSexo.setDisable(true);
-        cbTipo.setDisable(true);
+        comboBoxTipo.setDisable(true);
+        btnSalvar.setDisable(true);
     }
 
-    //TODO: Bug ao exibir o tipo de funcionario
     private void setEntityIntoView() {
         txtNome.setText(pessoa.getNome());
         txtCpf.setText(pessoa.getCpf());
         txtDataNascimento.setText(String.valueOf(pessoa.getDataNascimento()));
         cbSexo.getSelectionModel().select(pessoa.getSexo());
-        cbTipo.getSelectionModel().select(pessoa.getType());
+        comboBoxTipo.getSelectionModel().select(pessoa.getTipo());
 
         if (pessoa instanceof Cliente) {
             lblTotalPontosFidelidade.setText(String.valueOf(((Cliente)pessoa).getPontosFidelidade()));
             txtTurno.setVisible(false);
             txtSalario.setVisible(false);
+            lblSalario.setVisible(false);
+            lblTurno.setVisible(false);
 
         } else {
             txtTurno.setText(((Funcionario)pessoa).getTurno());
@@ -144,12 +135,12 @@ public class PessoaUIController {
         pessoa.setCpf(txtCpf.getText());
         pessoa.setDataNascimento(LocalDate.parse(txtDataNascimento.getText()));
         pessoa.setSexo(cbSexo.getSelectionModel().getSelectedItem());
-
+        pessoa.setTipo((comboBoxTipo.getSelectionModel().getSelectedItem()));
     }
 
     private void createPessoaProperKind() {
-        String pessoaTipo = cbTipo.getSelectionModel().getSelectedItem();
-        if (pessoaTipo.equals("Cliente")) {
+        PessoaTipo pessoaTipo = comboBoxTipo.getSelectionModel().getSelectedItem();
+        if (pessoaTipo.equals(PessoaTipo.CLIENTE)) {
             Cliente cliente = new Cliente();
             cliente.setPontosFidelidade(0D);
             pessoa = cliente;
@@ -166,8 +157,8 @@ public class PessoaUIController {
     }
 
     public void choiceTipo(ActionEvent actionEvent) {
-        String selectedTipo = cbTipo.getSelectionModel().getSelectedItem();
-        if (selectedTipo.equals("Cliente")) {
+        PessoaTipo pessoaTipo = comboBoxTipo.getSelectionModel().getSelectedItem();
+        if (pessoaTipo.equals(PessoaTipo.CLIENTE)) {
             lblTotalPontosFidelidade.setVisible(true);
             lblPontosFidelidade.setVisible(true);
             txtSalario.setDisable(true);

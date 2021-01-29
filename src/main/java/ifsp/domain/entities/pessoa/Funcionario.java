@@ -9,15 +9,10 @@ public class Funcionario extends Pessoa{
     public Funcionario() {
     }
 
-    public Funcionario(String nome, String sexo, String cpf, LocalDate dataNascimento, Double salario, String turno) {
-        super(nome, sexo, cpf, dataNascimento);
+    public Funcionario(String nome, String sexo, String cpf, LocalDate dataNascimento, PessoaTipo tipo, Double salario, String turno) {
+        super(nome, sexo, cpf, dataNascimento, tipo);
         this.salario = salario;
         this.turno = turno;
-    }
-
-    @Override
-    public String getType() {
-        return "Funcionário";
     }
 
     public Double getSalario() {
@@ -38,10 +33,6 @@ public class Funcionario extends Pessoa{
 
     @Override
     public String toString() {
-        return "Funcionario{" +
-                "salario=" + salario +
-                ", turno='" + turno + '\'' +
-                ", vendasRealizadas=" +
-                '}';
+        return getNome();
     }
 }

@@ -20,7 +20,7 @@ public class SqliteVendaDAO implements VendaDAO {
     @Override
     public Integer create(Venda venda) {
         String sql = "INSERT INTO Venda (data_venda, funcionario_responsavel, cliente, valor_venda, nome_produto, " +
-                "categoria VALUES (?, ?, ?, ?, ?, ?) ";
+                "categoria) VALUES (?, ?, ?, ?, ?, ?) ";
 
         try(PreparedStatement stmt = ConnectionFactory.createPreparedStatement(sql)) {
             stmt.setDate(1, Date.valueOf(venda.getDataVenda()));
@@ -96,7 +96,7 @@ public class SqliteVendaDAO implements VendaDAO {
     @Override
     public boolean update(Venda venda) {
         String sql = "UPDATE Venda SET data_venda = ?, funcionario_responsavel = ?, cliente = ?, valor_venda = ?, " +
-                "nome_produto = ? categoria = ? WHERE id = ?";
+                "nome_produto = ?, categoria = ? WHERE id = ?";
 
         try(PreparedStatement stmt = ConnectionFactory.createPreparedStatement(sql)) {
             stmt.setDate(1, Date.valueOf(venda.getDataVenda()));
@@ -135,5 +135,25 @@ public class SqliteVendaDAO implements VendaDAO {
             e.printStackTrace();
         }
         return false;
+    }
+
+    @Override
+    public List<Venda> readByCpf(String cpf) {
+        String sql = "SELECT Venda.* FROM Venda JOIN Pessoa On Venda.cliente = Pessoa.cpf " +
+                "WHERE pessoa.cpf = ?";
+
+        List<Venda> vendas = new ArrayList<>();
+
+        try(PreparedStatement stmt = ConnectionFactory.createPreparedStatement(sql)) {
+            stmt.setString(1, cpf);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                Venda venda = resultSetToEntity(rs);
+                vendas.add(venda);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return vendas;
     }
 }

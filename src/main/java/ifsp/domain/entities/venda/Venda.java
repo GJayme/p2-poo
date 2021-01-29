@@ -18,6 +18,15 @@ public class Venda {
     public Venda() {
     }
 
+    public Venda(LocalDate dataVenda, Double valorVenda, String nomeProduto, CategoriaProduto categoriaProduto, Cliente cliente, Funcionario funcionario){
+        this.dataVenda = dataVenda;
+        this.valorVenda = valorVenda;
+        this.nomeProduto = nomeProduto;
+        this.categoriaProduto = categoriaProduto;
+        this.cliente = cliente;
+        this.funcionario = funcionario;
+    }
+
     public Venda(Integer id, LocalDate dataVenda, Double valorVenda, String nomeProduto, CategoriaProduto categoriaProduto, Cliente cliente, Funcionario funcionario) {
         this.id = id;
         this.dataVenda = dataVenda;

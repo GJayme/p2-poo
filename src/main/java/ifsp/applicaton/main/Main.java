@@ -38,8 +38,8 @@ public class Main {
         updatePessoaUseCase = new UpdatePessoaUseCase(pessoaDAO);
 
         VendaDAO vendaDAO = new SqliteVendaDAO();
-        createVendaUseCase = new CreateVendaUseCase(vendaDAO);
-        deleteVendaUseCase = new DeleteVendaUseCase(vendaDAO);
+        createVendaUseCase = new CreateVendaUseCase(vendaDAO, updatePessoaUseCase);
+        deleteVendaUseCase = new DeleteVendaUseCase(vendaDAO, updatePessoaUseCase);
         readVendaUseCase = new ReadVendaUseCase(vendaDAO);
         updateVendaUseCase = new UpdateVendaUseCase(vendaDAO);
     }

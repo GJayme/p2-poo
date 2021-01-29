@@ -1,22 +1,23 @@
 package ifsp.domain.usercases.venda;
 
 import ifsp.domain.entities.venda.Venda;
-import ifsp.domain.usercases.utils.EntityAlreadyExistsException;
+import ifsp.domain.usercases.pessoa.UpdatePessoaUseCase;
 
 public class CreateVendaUseCase {
 
     private VendaDAO vendaDAO;
+    private UpdatePessoaUseCase updatePessoaUseCase;
 
-    public CreateVendaUseCase(VendaDAO vendaDAO) {
+    public CreateVendaUseCase(VendaDAO vendaDAO, UpdatePessoaUseCase updatePessoaUseCase) {
         this.vendaDAO = vendaDAO;
+        this.updatePessoaUseCase = updatePessoaUseCase;
     }
 
     public Integer create(Venda venda){
 
-        Integer id = venda.getId();
-        if (vendaDAO.readOne(id).isPresent()){
-            throw new EntityAlreadyExistsException("O ID dessa venda já foi utilizado.");
-        }
+        Double pontos = PontosFidelidade.getPontos(venda.getValorVenda());
+        venda.getCliente().addPontosFidelidade(pontos);
+        updatePessoaUseCase.update(venda.getCliente());
 
         return vendaDAO.create(venda);
     }

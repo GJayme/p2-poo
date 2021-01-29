@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -26,5 +25,8 @@
             <Font size="24.0" />
          </font>
       </Label>
+      <Button fx:id="btnVisualizarVenda" layoutX="158.0" layoutY="360.0" mnemonicParsing="false" onAction="#visualizarVenda" text="Visualizar Venda" />
+      <Button fx:id="btnEditarVenda" layoutX="303.0" layoutY="360.0" mnemonicParsing="false" onAction="#editarVenda" text="Editar Venda" />
+      <Button fx:id="btnDeletarVenda" layoutX="426.0" layoutY="360.0" mnemonicParsing="false" onAction="#deletarVenda" text="Deletar Venda" />
    </children>
 </AnchorPane>

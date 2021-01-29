@@ -3,9 +3,13 @@ package ifsp.applicaton.repository;
 import ifsp.domain.entities.pessoa.Cliente;
 import ifsp.domain.entities.pessoa.Funcionario;
 import ifsp.domain.entities.pessoa.Pessoa;
+import ifsp.domain.entities.pessoa.PessoaTipo;
 import ifsp.domain.usercases.pessoa.PessoaDAO;
 
-import java.sql.*;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Types;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,8 +18,8 @@ import java.util.Optional;
 public class SqlitePessoaDAO implements PessoaDAO {
     @Override
     public String create(Pessoa pessoa) {
-        String sql = "INSERT INTO Pessoa(nome, cpf, sexo, data_nascimento, salario, turno, pontos_fidelidade) " +
-                "VALUES(?, ?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO Pessoa(nome, cpf, sexo, data_nascimento, salario, turno, pontos_fidelidade, tipo) " +
+                "VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
 
         try(PreparedStatement stmt = ConnectionFactory.createPreparedStatement(sql)) {
             stmt.setString(1, pessoa.getNome());
@@ -36,6 +40,8 @@ public class SqlitePessoaDAO implements PessoaDAO {
             } else {
                 stmt.setNull(7, Types.VARCHAR);
             }
+
+            stmt.setString(8, pessoa.getTipo().toString());
 
             stmt.execute();
             return pessoa.getCpf();
@@ -71,11 +77,12 @@ public class SqlitePessoaDAO implements PessoaDAO {
         Double salario = rs.getDouble("salario");
         String turno = rs.getString("turno");
         Double pontosFidelidade = rs.getDouble("pontos_fidelidade");
+        PessoaTipo pessoaTipo = PessoaTipo.toEnum(rs.getString("tipo"));
 
-        if (salario != null) {
-            return new Funcionario(nome, sexo, cpf, dataNascimento, salario, turno);
+        if (PessoaTipo.FUNCIONARIO.equals(pessoaTipo)) {
+            return new Funcionario(nome, sexo, cpf, dataNascimento, pessoaTipo, salario, turno);
         } else {
-            return new Cliente(nome, sexo, cpf, dataNascimento, pontosFidelidade);
+            return new Cliente(nome, sexo, cpf, dataNascimento, pessoaTipo, pontosFidelidade);
         }
     }
 
@@ -98,8 +105,8 @@ public class SqlitePessoaDAO implements PessoaDAO {
 
     @Override
     public boolean update(Pessoa pessoa) {
-        String sql = "UPDATE Pessoa SET nome = ?, sexo = ?, data_nascimento = ? pontos_fidelidade = ? " +
-                "salario = ? + turno = ? WHERE cpf = ?";
+        String sql = "UPDATE Pessoa SET nome = ?, sexo = ?, data_nascimento = ?, pontos_fidelidade = ?, " +
+                "salario = ?, turno = ? WHERE cpf = ?";
 
         try(PreparedStatement stmt = ConnectionFactory.createPreparedStatement(sql)) {
             stmt.setString(1, pessoa.getNome());

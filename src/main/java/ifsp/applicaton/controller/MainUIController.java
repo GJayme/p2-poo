@@ -1,18 +1,20 @@
 package ifsp.applicaton.controller;
 
 import ifsp.applicaton.view.WindowLoader;
-import ifsp.domain.entities.pessoa.Pessoa;
 import ifsp.domain.entities.venda.Venda;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.io.IOException;
 import java.util.List;
 
+import static ifsp.applicaton.main.Main.deleteVendaUseCase;
 import static ifsp.applicaton.main.Main.readVendaUseCase;
 
 public class MainUIController {
@@ -32,18 +34,9 @@ public class MainUIController {
     @FXML
     private TableColumn<Venda, String> cFuncionario;
     @FXML
-    private Label lblCpfCliente;
-    @FXML
     private TextField txtCpfCliente;
-    @FXML
-    private Button btnGerenciarPessoas;
-    @FXML
-    private Button btnRealizarVenda;
-    @FXML
-    private Button btnBuscarCpf;
 
     private ObservableList<Venda> tableData;
-    private Pessoa pessoa;
 
     @FXML
     private void initialize() {
@@ -58,12 +51,12 @@ public class MainUIController {
     }
 
     private void bindColumnsToValuesSources() {
-        cData.setCellValueFactory(new PropertyValueFactory<>("data_venda"));
-        cValor.setCellValueFactory(new PropertyValueFactory<>("valor_venda"));
-        cProduto.setCellValueFactory(new PropertyValueFactory<>("nome_produto"));
-        cCategoria.setCellValueFactory(new PropertyValueFactory<>("categoria"));
+        cData.setCellValueFactory(new PropertyValueFactory<>("dataVenda"));
+        cValor.setCellValueFactory(new PropertyValueFactory<>("valorVenda"));
+        cProduto.setCellValueFactory(new PropertyValueFactory<>("nomeProduto"));
+        cCategoria.setCellValueFactory(new PropertyValueFactory<>("categoriaProduto"));
         cCliente.setCellValueFactory(new PropertyValueFactory<>("cliente"));
-        cFuncionario.setCellValueFactory(new PropertyValueFactory<>("funcionario_responsavel"));
+        cFuncionario.setCellValueFactory(new PropertyValueFactory<>("funcionario"));
     }
 
     private void loadDataAndShow() {
@@ -77,9 +70,38 @@ public class MainUIController {
     }
 
     public void realizarVenda(ActionEvent actionEvent) throws IOException {
-        WindowLoader.setRoot("VendaManagementUI");
+        WindowLoader.setRoot("VendaUI");
     }
 
     public void buscarCpfCliente(ActionEvent actionEvent) {
+        List<Venda> vendas = readVendaUseCase.readByCpf(txtCpfCliente.getText());
+        tableData.clear();
+        tableData.addAll(vendas);
+    }
+
+    public void visualizarVenda(ActionEvent actionEvent) throws IOException {
+        showVendaInMode(UIMode.VISUALIZAR);
+    }
+
+    //TODO bug ao editar venda, gera nova venda ao inves de sobreescrever
+    public void editarVenda(ActionEvent actionEvent) throws IOException {
+        showVendaInMode(UIMode.EDITAR);
+    }
+
+    public void deletarVenda(ActionEvent actionEvent) {
+        Venda selectedVenda = tableView.getSelectionModel().getSelectedItem();
+        if (selectedVenda != null) {
+            deleteVendaUseCase.delete(selectedVenda.getId());
+            loadDataAndShow();
+        }
+    }
+
+    private void showVendaInMode(UIMode mode) throws IOException {
+        Venda selectedVenda = tableView.getSelectionModel().getSelectedItem();
+        if (selectedVenda != null) {
+            WindowLoader.setRoot("VendaUI");
+            VendaUIController controller = (VendaUIController) WindowLoader.getController();
+            controller.setVenda(selectedVenda, mode);
+        }
     }
 }

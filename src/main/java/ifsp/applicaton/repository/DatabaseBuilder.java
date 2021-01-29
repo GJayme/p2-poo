@@ -41,7 +41,8 @@ public class DatabaseBuilder {
         builder.append("data_nascimento DATE NOT NULL, \n");
         builder.append("salario NUMERIC, \n");
         builder.append("turno TEXT, \n");
-        builder.append("pontos_fidelidade NUMERIC \n");
+        builder.append("pontos_fidelidade NUMERIC, \n");
+        builder.append("tipo TEXT NOT NULL \n");
         builder.append("); \n");
 
         System.out.println(builder.toString());
