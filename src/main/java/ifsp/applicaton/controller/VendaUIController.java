@@ -16,8 +16,7 @@ import javafx.scene.control.TextField;
 import java.io.IOException;
 import java.util.Optional;
 
-import static ifsp.applicaton.main.Main.createVendaUseCase;
-import static ifsp.applicaton.main.Main.readPessoaUseCase;
+import static ifsp.applicaton.main.Main.*;
 
 public class VendaUIController {
 
@@ -47,11 +46,16 @@ public class VendaUIController {
         WindowLoader.setRoot("MainUI");
     }
 
-    public void salvarVenda(ActionEvent actionEvent) throws IOException {
+    public void saveAndUpdate(ActionEvent actionEvent) throws IOException {
         getEntityFromView();
 
-        createVendaUseCase.create(venda);
+        if (btnSalvar.getText().equals("Atualizar")){
+            updateVendaUseCase.update(venda);
+            WindowLoader.setRoot("MainUI");
+            return;
+        }
 
+        createVendaUseCase.create(venda);
         WindowLoader.setRoot("MainUI");
     }
 
@@ -59,6 +63,10 @@ public class VendaUIController {
         if (venda == null){
             createVenda();
         }
+
+        venda.setNomeProduto(txtNomeProduto.getText());
+        venda.setValorVenda(Double.parseDouble(txtValorProduto.getText()));
+        venda.setDataVenda(dtData.getValue());
     }
 
     private void createVenda() {

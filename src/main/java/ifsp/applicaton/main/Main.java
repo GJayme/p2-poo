@@ -41,6 +41,6 @@ public class Main {
         createVendaUseCase = new CreateVendaUseCase(vendaDAO, updatePessoaUseCase);
         deleteVendaUseCase = new DeleteVendaUseCase(vendaDAO, updatePessoaUseCase);
         readVendaUseCase = new ReadVendaUseCase(vendaDAO);
-        updateVendaUseCase = new UpdateVendaUseCase(vendaDAO);
+        updateVendaUseCase = new UpdateVendaUseCase(vendaDAO, updatePessoaUseCase);
     }
 }

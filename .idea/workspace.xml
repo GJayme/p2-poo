@@ -5,32 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5d7fd29-2aed-46bc-a796-48aa47cd4cf0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/VendaUIController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/PessoaTipo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/PontosFidelidade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/VendaUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SC3005054.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SC3005054_P2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/MainUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/MainUIController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoaUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoaUIController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoasManagementUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/PessoasManagementUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/VendaUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/VendaUIController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/DatabaseBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/DatabaseBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqlitePessoaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqlitePessoaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqliteVendaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/applicaton/repository/SqliteVendaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Funcionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/pessoa/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/venda/Venda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/entities/venda/Venda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/CreateVendaUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/CreateVendaUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/DeleteVendaUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/DeleteVendaUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/ReadVendaUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/ReadVendaUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/VendaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/VendaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/MainUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/MainUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/UpdateVendaUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifsp/domain/usercases/venda/UpdateVendaUseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoaUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoaUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoasManagementUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/PessoasManagementUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/VendaUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ifsp/applicaton/view/VendaUI.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,60 +98,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="SC3005054_P2" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="SC3005054_P2" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -194,7 +133,8 @@
       <workItem from="1611697107266" duration="14722000" />
       <workItem from="1611786710038" duration="7177000" />
       <workItem from="1611795353234" duration="6921000" />
-      <workItem from="1611863597523" duration="22796000" />
+      <workItem from="1611863597523" duration="23134000" />
+      <workItem from="1611934120931" duration="2893000" />
     </task>
     <servers />
   </component>
@@ -224,17 +164,17 @@
           <line>24</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/VendaUIController.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ifsp/applicaton/controller/VendaUIController.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="pessoa" language="JAVA" />
-        <watch expression="getPessoa(txtCpfCliente.getText())" language="JAVA" />
-        <watch expression="getPessoa(txtCpfVendedor.getText())" language="JAVA" />
-        <watch expression="vendaDAO" language="JAVA" />
-        <watch expression="vendaDAO.readOne(id)" language="JAVA" />
-        <watch expression="vendaSelected.getCliente()" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

@@ -20,7 +20,7 @@
       <Label fx:id="lblPontosFidelidade" layoutX="306.0" layoutY="190.0" text="Pontos Fidelidade:" />
       <Label fx:id="lblTurno" layoutX="48.0" layoutY="190.0" text="Turno:" />
       <Label fx:id="lblTotalPontosFidelidade" layoutX="499.0" layoutY="190.0" />
-      <Button fx:id="btnSalvar" layoutX="444.0" layoutY="285.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
+      <Button fx:id="btnSalvar" layoutX="444.0" layoutY="285.0" mnemonicParsing="false" onAction="#saveAndUpdate" text="Salvar" />
       <Button fx:id="btnVoltar" layoutX="537.0" layoutY="285.0" mnemonicParsing="false" onAction="#voltar" text="Voltar" />
    </children>
 </AnchorPane>

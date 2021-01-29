@@ -36,7 +36,7 @@ public class DatabaseBuilder {
         builder.append("CREATE TABLE Pessoa (\n");
         builder.append("id INTEGER PRIMARY KEY AUTOINCREMENT, \n");
         builder.append("nome TEXT NOT NULL, \n");
-        builder.append("cpf TEXT NOT NULL, \n");
+        builder.append("cpf TEXT NOT NULL UNIQUE, \n");
         builder.append("sexo TEXT NOT NULL, \n");
         builder.append("data_nascimento DATE NOT NULL, \n");
         builder.append("salario NUMERIC, \n");

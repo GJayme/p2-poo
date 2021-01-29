@@ -71,7 +71,6 @@ public class PessoasManagementUIController {
         WindowLoader.setRoot("MainUI");
     }
 
-    //TODO bug ao criar pessoa com msm CPF, deveria acusar erro, mas sobreescreve
     public void novaPessoa(ActionEvent actionEvent) throws IOException {
         WindowLoader.setRoot("PessoaUI");
     }
@@ -80,7 +79,6 @@ public class PessoasManagementUIController {
         showPessoaInMode(UIMode.VISUALIZAR);
     }
 
-    //TODO bug ao editar pessoa, gera nova pessoa
     public void editarPessoa(ActionEvent actionEvent) throws IOException {
         showPessoaInMode(UIMode.EDITAR);
     }

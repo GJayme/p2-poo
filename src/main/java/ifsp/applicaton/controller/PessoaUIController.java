@@ -114,15 +114,16 @@ public class PessoaUIController {
         }
     }
 
-    public void salvar(ActionEvent actionEvent) throws IOException {
+    public void saveAndUpdate(ActionEvent actionEvent) throws IOException {
         getEntityFromView();
-        boolean newPessoa = readPessoaUseCase.readOne(pessoa.getCpf()).isEmpty();
 
-        if (newPessoa) {
-            createPessoaUseCase.create(pessoa);
-        } else {
+        if (btnSalvar.getText().equals("Atualizar")){
             updatePessoaUseCase.update(pessoa);
+            WindowLoader.setRoot("PessoasManagementUI");
+            return;
         }
+
+        createPessoaUseCase.create(pessoa);
         WindowLoader.setRoot("PessoasManagementUI");
     }
 
